@@ -1,0 +1,263 @@
+@charset "UTF-8";
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.inputAccount {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h3,h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.register-item {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.register-item-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.register-item li {
+    margin-bottom: 15px;
+}
+
+input[type="text"], input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.submit-button, .submit-button-index {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.button, .confirm-button {
+    margin: 0 20px;
+    padding: 10px 20px;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 120px;
+    max-height: 40px;
+}
+
+.button {
+    background-color: #4CAF50;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+.confirm-button {
+    background-color: #007BFF;
+}
+
+.confirm-button:hover {
+    background-color: #0056b3;
+}
+
+.register-done-button {
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+}
+
+.login-item-label {
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+ul {
+    margin-bottom: 20px;
+    list-style-type: none;  /* 追加: リストマークを非表示 */
+}
+
+li.login-item {
+    display: flex;
+    align-items: center;
+}
+
+.msg-box {
+    display: none;  /* デフォルトでは非表示 */
+  
+}
+
+.errorMsg {
+    display: block; /* エラーがある場合にのみ表示 */
+    color: red;     /* エラーメッセージの文字色を赤にする */
+}
+
+.button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+}
+
+.submit-button-index li {
+    margin-right: 10px;
+}
+
+.submit-button-index li:last-child {
+    margin-right: 0;
+}
+
+/* じゃんけん選択ボタンのスタイル */
+button {
+	
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    background-color: #4CAF50; /* 緑色 */
+    color: white; /* 文字色は白 */
+}
+
+button:hover {
+    background-color: #45a049; /* ホバー時の背景色を少し暗く */
+}
+
+/* メッセージ表示のスタイル */
+#message {
+    font-size: 18px;
+    color: #31708f;
+    margin-top: 20px;
+}
+
+/* キャラクターと敵のコンテナスタイル */
+.character-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.character {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+/* じゃんけん結果ページのコンテナスタイル */
+.result-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.result-container h1,
+.result-container p {
+    margin-bottom: 20px;
+}
+
+/* ログインページと登録ページのボタンスタイルの統一 */
+.button, .confirm-button, .register-done-button {
+    background-color: #4CAF50; /* 緑色 */
+    color: white; /* 文字色は白 */
+}
+
+.button:hover, .confirm-button:hover, .register-done-button:hover {
+    background-color: #45a049; /* ホバー時の背景色を少し暗く */
+}
+
+/* トップに戻るリンクのスタイル */
+a.return-link {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+a.return-link:hover {
+    background-color: #45a049;
+}
+
+/* 対戦キャラクター表示の円形コンテナスタイル */
+.circle {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+    margin: 10px;
+    vertical-align: middle;
+}
+
+.circle-text {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: normal;
+    margin: 10px;
+}
+
+/* 'VS'テキストのスタイル */
+.vs {
+    display: inline-block;
+    font-size: 24px;
+    margin: 20px;
+    vertical-align: middle;
+}
+
+#resultMessage {
+  font-weight: bold; /* 結果メッセージを太字に */
+  /* 他の必要なスタイルがあればここに追加 */
+}
+
+body, html {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column; /* 要素を縦方向に並べる */
+  justify-content: center; /* 縦方向の中心に */
+  align-items: center; /* 横方向の中心に */
+  min-height: 100vh; /* ビューポートの高さに合わせる */
+  text-align: center; /* テキストを中央揃えに */
+}
